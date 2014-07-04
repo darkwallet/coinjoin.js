@@ -1,0 +1,29 @@
+{
+  "name": "coinjoin.js",
+  "version": "0.5.0",
+
+  "description": "",
+  "author": "Pablo Martin <caedes@sindominio.net>",
+  "script": {
+    "test": ""
+  },
+  "main": "coinjoin.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darkwallet/coinjoin.js"
+  },
+  "bugs": {
+    "url": "https://github.com/darkwallet/coinjoin.js/issues"
+  },
+  "keybords": [
+    "bitcoin",
+    "privacy",
+    "mixing",
+    "coinjoin"
+  ],
+  "dependencies": {
+    "bitcoinjs-lib": "~0.2.0"
+  },
+  "license": "AGPLv3+"
+}
+

@@ -4,7 +4,7 @@
 
   "description": "",
   "author": "Pablo Martin <caedes@sindominio.net>",
-  "script": {
+  "scripts": {
     "test": "./node_modules/grunt-cli/bin/grunt jasmine_node"
   },
   "main": "coinjoin.js",

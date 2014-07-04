@@ -5,7 +5,7 @@
   "description": "",
   "author": "Pablo Martin <caedes@sindominio.net>",
   "script": {
-    "test": ""
+    "test": "./node_modules/grunt-cli/bin/grunt jasmine_node"
   },
   "main": "coinjoin.js",
   "repository": {
@@ -24,6 +24,11 @@
   "dependencies": {
     "bitcoinjs-lib": "~0.2.0"
   },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-jasmine-node-coverage": "~0.1.11",
+    "coveralls": "~2.10.0"
+  },
   "license": "AGPLv3+"
 }
-

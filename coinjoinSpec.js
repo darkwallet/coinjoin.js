@@ -1,6 +1,8 @@
 'use strict';
 
-define(['util/coinjoin', 'util/protocol', 'bitcoinjs-lib'], function(CoinJoin, Protocol, Bitcoin) {
+var CoinJoin = require('./coinjoin');
+var Protocol = CoinJoin.Protocol;
+var Bitcoin = require('bitcoinjs-lib');
 
   var guest;
   var initiator
@@ -234,5 +236,3 @@ define(['util/coinjoin', 'util/protocol', 'bitcoinjs-lib'], function(CoinJoin, P
 
 
   });
- 
-});

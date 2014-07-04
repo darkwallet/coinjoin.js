@@ -1,6 +1,25 @@
 'use strict';
 
-define(['bitcoinjs-lib', 'util/btc'], function(Bitcoin, BtcUtils) {
+  var Bitcoin = require('bitcoinjs-lib');
+
+  var BtcUtils = BtcUtils || {};
+  BtcUtils.fixTxVersions = function(tx, identity) {
+      // XXX fix trouble with bitcoinjs..
+      if (identity.wallet.network == 'testnet') {
+          var versions = identity.wallet.versions;
+          tx.outs.forEach(function(txOut) {
+              switch(txOut.address.version) {
+                  case 0:
+                      txOut.address.version = versions.address;
+                      break;
+                  case 5:
+                      txOut.address.version = versions.p2sh;
+                      break;
+              }
+          });
+      }
+      return tx;
+  };
 
   /*
    * CoinJoin Class
@@ -292,7 +311,19 @@ define(['bitcoinjs-lib', 'util/btc'], function(Bitcoin, BtcUtils) {
       return true;
   };
 
+  CoinJoin.Protocol = {
+    packMessage: function(type, data) {
+      var request = {}
+      request['type'] = type;
+      request['body'] = data;
+      return request;
+    },
+    CoinJoinMsg: function(id, tx) {
+      var data = {};
+      data['id'] = id;
+      data['tx'] = tx;
+      return CoinJoin.Protocol.packMessage('CoinJoin', data);
+    }
+  }
 
-  return CoinJoin;
-
-});
+  module.exports = CoinJoin;

@@ -2,7 +2,7 @@
   "name": "coinjoin.js",
   "version": "0.5.0",
 
-  "description": "",
+  "description": "Javascript module with coinjoin implementation compatible with bitcoinjs-lib",
   "author": "Pablo Martin <caedes@sindominio.net>",
   "scripts": {
     "test": "./node_modules/grunt-cli/bin/grunt jasmine_node"

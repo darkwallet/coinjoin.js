@@ -1,5 +1,14 @@
 'use strict';
 
+if (typeof module === 'object' && typeof define !== 'function') {
+    var define = function (factory) {
+        module.exports = factory(require, exports, module);
+    };
+}
+
+define(function (require, exports, module) {
+  var b = require('b');
+
   var Bitcoin = require('bitcoinjs-lib');
 
   var BtcUtils = BtcUtils || {};
@@ -326,4 +335,6 @@
     }
   }
 
-  module.exports = CoinJoin;
+  return CoinJoin;
+
+});

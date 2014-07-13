@@ -11,5 +11,5 @@ Bitcoin privacy leaks are [dangerous](https://bitcointalk.org/index.php?topic=33
 At the moment, we have the following base proposals:
 
 * [CoinJoin](https://bitcointalk.org/index.php?topic=279249.0)
-* [CoinSwap](https://bitcointalk.org/index.php?topic=321228.0) (specialised CoinJoin with 2 people)
+* [CoinSwap](https://bitcointalk.org/index.php?topic=321228.0)
 

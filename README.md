@@ -1,4 +1,4 @@
-CoinjoinJS [![Build Status](https://drone.io/github.com/darkwallet/stealth.js/status.png)](https://drone.io/github.com/darkwallet/stealth.js/latest) [![Coverage Status](https://img.shields.io/coveralls/darkwallet/stealth.js.svg)](https://coveralls.io/r/darkwallet/stealth.js)
+CoinjoinJS [![Build Status](https://drone.io/github.com/darkwallet/coinjoin.js/status.png)](https://drone.io/github.com/darkwallet/coinjoin.js/latest) [![Coverage Status](https://img.shields.io/coveralls/darkwallet/coinjoin.js.svg)](https://coveralls.io/r/darkwallet/coinjoin.js)
 ==========
 
 Coinjoin library included in DarkWallet. Depends on bitcoinjs-lib.

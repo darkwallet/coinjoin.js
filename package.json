@@ -23,7 +23,7 @@
     "coinjoin"
   ],
   "dependencies": {
-    "bitcoinjs-lib": "~0.2.0"
+    "bitcoinjs-lib": "~1.2.0"
   },
   "devDependencies": {
     "jasmine-node": "~1.14.5",
